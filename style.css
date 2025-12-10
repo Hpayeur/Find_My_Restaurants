@@ -32,13 +32,13 @@ header h1{
 }
 
 .banner{
-    position: relative;
+    position: fixed;
     margin-top: 45px;
     max-width: 100%;
     height: 500px;
 }
 
-.banner-text{
+.banner-text h2 {
 background:#776960;
 color:white;
 position: absolute;
@@ -47,33 +47,27 @@ left: 0%;
 top: 70%;
 }
 
+.banner-text p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-style: oblique;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    text-align: center;
+    padding : 20px 20px;
+    color: #443c37;
+}
 
 footer{
 background-color:#776960;
 color:white;
 padding: 10px;
 text-align:center;
-position: relative;
+position: fixed;
+bottom: 0;
+width: 100%;
 }
 
 footer a {
     color:#cfb7a8;
 }
 
-/* <footer class="bg-dark">
-      <br />
-      <a href="about.html">About Us Page</a>
-      <br />
-      <img src ="Logo_Images/Pizza.png" alt="Pizza Logo" />
-      <br />
-    
-      © <span id="year">2025</span> Hailee Payeur, Utah
-      <a
-        id="ttechlink"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://tooeletech.edu/"
-        >Tooele Technical College</a
-      >
-      <br />
-      Last Updated: <span id="Date">Wed Dec 10, 2025</span>*/
