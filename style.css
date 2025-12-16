@@ -1,11 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 body{
-    display: flex;
-    flex-direction: column;
     align-items: center; 
     height: 100vh;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -48,11 +45,9 @@ header h1{
     color: white;
 }
 .intro p{
-    display: flex;
-    flex-direction: column;
   padding: 5px;
   font-size: 1.5rem;
-  position: absolute;
+  position: relative;
     left: 10%;
     top: 45%;
     color: #443c37;
@@ -62,38 +57,53 @@ img {
     max-width: 100%;
     padding: 10px;
     height: auto;
-    display: block;
 }
 
-.food-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 200px;
-    flex-wrap: wrap;
+.card{
+display:flex;
+flex-direction: column;
+align-items: center;
+height: 300px;
+border: 2px solid #443c37;
+border-radius: 15px;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+text-align: center;
+background-color: #cfb7a8;
+transition: transform 0.3s;
+margin: 20px;
 }
 
-.business-card {
-    width: 250px;
-    height: 300px;
-    border: 2px solid #443c37;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-    text-align: center;
-    background-color: #cfb7a8;
-    transition: transform 0.3s;
+.card-location{
+    font-size: 0.9rem;
+    color: #443c37;
+    margin-top: 5px;
 }
-.business-card:hover {
-    transform: scale(1.05);
+.card img{
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
 }
+
+.card h3{
+    margin: 10px 0 5px 0;
+    color: #443c37;
+    font-size: 1.2rem;
+}
+
+.card p{
+    color: #443c37;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
 
 footer{
 background-color:#776960;
 color:white;
 padding: 20px;
 text-align:center;
-position: relative;
+position: fixed;
 bottom: 0;
 width: 100%;
 }
@@ -111,6 +121,37 @@ footer img {
     margin-right: auto;
 }
 
+.card:hover {
+    transform: scale(1.05);
+}
+/* .food-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 200px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 250px;
+    height: 300px;
+    border: 2px solid #443c37;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    background-color: #cfb7a8;
+    transition: transform 0.3s;
+}
+.business-card:hover {
+    transform: scale(1.05);
+}
+
+
 /* background-color:#776960;
   color:#cfb7a8;
-     color: #443c37; */
+     color: #443c37; */ 
