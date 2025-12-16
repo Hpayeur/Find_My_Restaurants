@@ -40,7 +40,7 @@ header h1{
     display: flex;
     flex-direction: row;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: absolute;
     top: 25%;
     left: 10px;
@@ -58,6 +58,12 @@ header h1{
     color: #443c37;
 }
 
+img {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+    display: block;
+}
 
 .food-cards{
     display: flex;
@@ -91,6 +97,15 @@ width: 100%;
 
 footer a {
     color:#cfb7a8;
+}
+
+footer img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* background-color:#776960;
